@@ -127,7 +127,7 @@ ul>li {
 @media (max-width:740px){
     ul>li {
         width: 100%;
-        margin: 10px 30px;
+        margin: 10px 15px;
     }
     .projects-cards, .mask {
         height: 230px;
