@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+  margin: 0;
+  background-color: cadetblue;
+}
+
+.container {
+  position: relative;
+  background-color: rgb(255, 251, 235);
+  padding: 50px;
+  transform-origin: top left;
+  transition: all 0.4s ease;
+}
+
+.container.show-nav {
+  transform: rotate(-20deg);
+}
+
+.circle {
+  position: absolute;
+  left: -100px;
+  top: -100px;
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  background-color: rgb(255, 135, 117);
+  transition: all 0.4s ease;
+}
+
+.container.show-nav .circle {
+  transform: rotate(-70deg);
+}
+
+.circle button {
+  position: absolute;
+  background: transparent;
+  cursor: pointer;
+  border: 0;
+  left: 50%;
+  top: 50%;
+  font-size: 26px;
+  height: 100px;
+}
+
+#open {
+  left: 60%
+}
+
+#close {
+  top: 60%;
+  transform: rotate(90deg);
+  transform-origin: top left;
+}
+
+.content {
+  width: 100%;
+  max-width: 1000px;
+  margin: 50px auto;
+}
+
+.content img {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.content p {
+  line-height: 1.5;
+}
+
+.content h1, .content h3 {
+  margin: 20px 0 0 0;
+}
+
+.content small {
+  color: #555;
+  font-style: italic;
+}
+
+nav {
+  position: fixed;
+  bottom: 20px;
+  left: -20px;
+}
+
+nav>ul {
+  list-style: none;
+}
+
+nav>ul>li {
+  margin: 30px 0;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #fafafa;
+  transform: translateX(-120%);
+  transition: all 0.8s ease;
+}
+
+nav ul li + li {
+  margin-left: 15px;
+  transform: translateX(-170%);
+
+}
+
+nav ul li + li +li{
+  margin-left: 30px;
+  transform: translateX(-220%);
+
+}
+
+.container.show-nav + nav>ul>li {
+  transform: translateX(0%);
+}
+
+nav a {
+  color: #fafafa;
+  text-decoration: none;
+  margin-left: 10px;
+  transition: all 0.2s;
+}
+
+nav a:hover {
+  font-weight: bold;
+  color: antiquewhite;
+}
