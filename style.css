@@ -1,23 +1,29 @@
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
 * {
     box-sizing: border-box;
     /* border: 1px solid blue; */
 }
 
+
+
 body {
     font-family: 'Muli', sans-serif;
     margin: 0;
+    background-color: rgba(255, 99, 71, 0.24);
     overflow-x: hidden;
-    background-color: rgba(255, 99, 71, 0.24)
+
 }
 
-.title{
-    margin:50px auto;
+.title {
+    margin: 50px auto;
     text-align: center;
 }
-h1{
+
+h1 {
     margin-bottom: 10px;
 }
+
 .container {
     max-width: 1100px;
     height: 100vh;
@@ -120,35 +126,38 @@ ul>li {
     ul>li {
         width: 33.3%;
     }
+
     .projects-cards, .mask {
         height: 180px;
     }
 }
 
-@media (max-width:700px){
+@media (max-width:700px) {
     ul>li {
         width: 100%;
         margin: 10px 15px;
     }
+
     .projects-cards, .mask {
         height: 230px;
     }
 
-    .scroll-anima {
+    /* doesn't work in anima...some bugs Q_Q */
+    /* .scroll-anima {
         transition: all 0.3s ease-out;
         transform: translateX(200%);
     }
 
-    .scroll-anima:nth-of-type(even){
+    .scroll-anima:nth-of-type(even) {
         transform: translateX(-200%);
     }
 
-    .scroll-anima.show{
+    .scroll-anima.show {
         transform: translateX(0%);
     }
 
-    .scroll-anima.show-spc{
+    .scroll-anima.show-spc {
         transform: translateX(0%);
-    }
+    } */
 
 }

@@ -21,7 +21,7 @@ function cleanCardState(){
 const listCards = document.querySelectorAll('.scroll-anima');
 window.addEventListener('scroll', checkShow);
 
-checkShow();
+checkShow();    
 
 function checkShow() {
     console.log('show area');
