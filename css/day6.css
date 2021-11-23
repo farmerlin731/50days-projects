@@ -34,8 +34,6 @@ h1 {
     padding: 50px 100px;
     text-align: center;
     transform: translateX(300%);
-
-
     transition: all 0.3s ease-out;
 }
 
