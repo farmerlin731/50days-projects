@@ -11,15 +11,20 @@ cards = document.querySelectorAll('.projects-cards');
 // });
 
 cards.forEach((item)=>{
-    console.log(item);
+    // for web
     item.addEventListener('mouseenter',(e)=>{
         item.classList.add('active');
     });
 
     item.addEventListener('mouseleave',(e)=>{
-        item.classList.remove('active');
+        cleanCardState();
     });
     
+    // for mobile
+    item.addEventListener('click',(e)=>{
+        cleanCardState();
+        item.classList.add('active');
+    });
 });
 
 
