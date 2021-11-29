@@ -87,17 +87,22 @@ ul>li {
     transition: all 0.15s ease;
 }
 
-.projects-cards:hover .mask {
+/* .projects-cards:hover .mask {
+    transition: all 0.3s ease;
+    top: 0;
+} */
+
+.projects-cards.active .mask {
     transition: all 0.3s ease;
     top: 0;
 }
 
-@media (max-width:500px) {
+/* @media (max-width:500px) {
     .projects-cards.active .mask {
         transition: all 0.3s ease;
         top: 0;
     }
-}
+} */
 
 .mask h4 {
     color: whitesmoke;
