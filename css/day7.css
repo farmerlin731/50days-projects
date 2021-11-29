@@ -94,7 +94,7 @@ button {
     margin-top: 10px;
     border: 2px white solid;
     background: none;
-    padding: 10px;
+    padding: 10px 30px;
     font-size: 20px;
     color: white;
     border-radius: 10px;
@@ -116,6 +116,10 @@ button {
     opacity: 0.3;
 }
 
+.left-focus .split.right .text-region {
+    opacity: 0;
+}
+
 .right-focus .split.right {
     width: 65%;
 }
@@ -125,6 +129,9 @@ button {
     opacity: 0.3;
 }
 
+.right-focus .split.left .text-region {
+    opacity: 0;
+}
 
 @media (max-width:740px) {
     .left-focus .split.left {
@@ -136,6 +143,9 @@ button {
         opacity: 0.3;
     }
 
+
+
+
     .right-focus .split.right {
         width: 75%;
     }
@@ -144,4 +154,5 @@ button {
         width: 25%;
         opacity: 0.3;
     }
+
 }
