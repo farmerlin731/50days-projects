@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Muli', sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    margin: 0;
+    background-color: rgb(255, 251, 235);
+}
+
+.container {
+    width: 400px;
+    background-color: steelblue;
+    text-align: center;
+    color: #fff;
+    padding: 20px 40px;
+}
+
+.btn {
+    background-color: powderblue;
+    color: navy;
+    width: 90%;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 10px;
+}
+
+.btn:focus {
+    transform: scale(0.95);
+}
+
+
+
+.form-control {
+    margin: 50px 0;
+    position: relative;
+}
+
+.form-control input {
+    color: white;
+    width: 100%;
+    font-size: 22px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    padding-left: 5px;
+
+}
+
+.form-control input:focus,
+.form-control input:valid {
+    outline: none;
+    border-bottom: 2px solid powderblue;
+    /* 其實coral的顏色配起來蠻可愛的 XD */
+    /* border-bottom: 2px solid coral;  */
+}
+
+
+
+label {
+    color: white;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    pointer-events: none;
+    /* 這個要加，才不會讓label的點擊效果存在*/
+}
+
+label span{
+    /* display & transition 都要加在這，才會正常work*/
+    display: inline-block;
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.form-control input:focus+label span,
+.form-control input:valid+label span{
+    /* 記得這個css是要放在span不是label...雖然我也不知道差在哪 XD */
+    color: powderblue;
+    /* color: coral; */
+    transform: translateY(-30px);
+}
+
+
